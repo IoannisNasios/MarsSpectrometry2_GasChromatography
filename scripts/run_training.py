@@ -403,6 +403,9 @@ def train_model_cnn(model_type, epochs=20, SNAPSHOTS=1, BATCH_SIZE=16,
         return float(lr_0 / 2 * cos_out)
     lr_anneal = LearningRateScheduler(schedule=_cosine_anneal_schedule, verbose=False)
 
+#    # Data Preprocess  
+    data_maxes2 = train_img_data.astype('float')
+    
     fold=0
     for train_index, test_index in skf.split(data_maxes2, labelsOne):
         set_seed(seed=SEEDNUM)
