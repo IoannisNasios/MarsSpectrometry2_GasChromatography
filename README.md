@@ -26,6 +26,12 @@ The solution is based on the ensemble of CNN over 2d representations (m/z over t
 
 <br />  
 
+
+**Current research is published by [Icarus](https://www.sciencedirect.com/science/article/abs/pii/S0019103523004037).**  
+**Preprint can be found on [arxiv](https://arxiv.org/abs/2310.11888).**  
+
+<br />
+
 ### Requirements  
 Linux system, python 3, virtualenv, NVidia GPU should be fine.  
 All my trainings took place in Google Colab Pro using a Tesla T4 GPU. 
